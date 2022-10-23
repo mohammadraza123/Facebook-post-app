@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post App (Facebook)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="Container" id="raza">
+    <h1>Create Post</h1>
+    <form>
+      <div class="Me">
+        <img src="my photo.jpg">
+        <h4>Muhammad Raza</h4>
+      </div>
+      <div class="freinds">
+        <img id="option" src="icon.png" style="border-radius: 90px;">
+        <span id="option" onclick="menu()">Freinds of freinds</span>
+      </div>
+
+      <textarea id="text" placeholder="What's on your mind, Muhammad?"></textarea>
+    </form>
+    <div class="color">
+      <button onclick="red()" class="btn" style="background-color:red;"></button>
+      <button onclick="green()" class="btn" style="background-color: green;"></button>
+      <button onclick="yellow()" class="btn" style="background-color: yellow;"></button>
+      <button onclick="blue()" class="btn" style="background-color:blue ;"></button>
+      <button onclick="pink()" class="btn" style="background-color:pink ;"></button>
+      <button onclick="orange()" class="btn" style="background-color:orange ;"></button>
+    </div>
+
+    <button onclick="textPosting()">Post </button>
+  </div>
+  <div class="posted" id="div1">
+    <div class="container" id="div2">
+      <h3>Your Post</h3>
+      <div class="row" id="div3">
+        <div class="col" id="div4">
+        </div>
+      </div>
+    </div>
+    <div class="LCS">
+      <button>Like</button>
+      <button>Comment</button>
+      <button>Share</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
